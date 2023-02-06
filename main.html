@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<div id="container">
+    <div class="all">
+        <div>
+            <button onclick="start()" id="btn">Confirm</button>
+            <input type="number" id="confirm" placeholder="Nhập tổng tiền ban đầu">
+
+        </div>
+        <table border="1" id="10">
+            <tr>
+                <th>Số tiền</th>
+                <th>Loại</th>
+                <th>Hạng mục</th>
+                <th>Chú thích</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="money">
+                </td>
+                <td>
+                    <select id="type" name="type1">
+                        <option value="collect">Thu</option>
+                        <option value="pay" id="pay1">Chi</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="category" name="category1">
+                        <option value="haveBreakfast">Ăn sáng</option>
+                        <option value="havingLunch">Ăn trưa</option>
+                        <option value="haveDinner">Ăn tối</option>
+                        <option value="wage">Lương</option>
+                        <option value="pickedUp">Nhặt được</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="note">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button onclick="add()">ADD</button>
+    </div>
+    <br>
+
+    <table id="expense-report">
+        <thead>
+        <tr>
+            <th>Tổng tiền ban đầu</th>
+            <th>Tổng tiền hiện tại</th>
+            <th>Loại</th>
+            <th>Hạng mục</th>
+            <th>Chú thích</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
